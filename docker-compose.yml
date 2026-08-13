@@ -1,0 +1,32 @@
+  services:
+  internetbanking:
+    build:
+      context: .
+      args:
+        MODULE: internetbanking
+    ports:
+      - "81:80"
+
+  mobilebanking:
+    build:
+      context: .
+      args:
+        MODULE: mobilebanking
+    ports:
+      - "82:80"
+
+  insurance:
+    build:
+      context: .
+      args:
+        MODULE: insurance
+    ports:
+      - "83:80"
+
+  loans:
+    build:
+      context: .
+      args:
+        MODULE: loans
+    ports:
+      - "84:80"
